@@ -1,7 +1,7 @@
 setTimeout(()=>{
-  $('.alert').css({'display':'block'})
+  $('.alertw').css({'display':'block'})
   setTimeout(()=>{
-    $('.alert').css({'display':'none'})
+    $('.alertw').css({'display':'none'})
   },10000);
 },3000)
 let current=0
@@ -65,6 +65,12 @@ let makeData=(arg1)=>{
       })
     ):
     $('.rating').text("")
+  }
+  if(arg1.Error=="Movie not found!"){
+    $('.plot').html(`
+    <div class="alert alert-danger" role="alert">
+      No Results Found!
+    </div>`)
   }
 }
 let searchResult=(arg1)=>{
