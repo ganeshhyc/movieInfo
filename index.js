@@ -71,7 +71,7 @@ let searchResult=(arg1)=>{
   $.ajax({
     type:'GET',
     dataType:'json',
-    url:'http://www.omdbapi.com/?apikey=b44f1fef&'+arg1,
+    url:'https://www.omdbapi.com/?apikey=b44f1fef&'+arg1,
     success:(data)=>{
       makeData(data)
     },
