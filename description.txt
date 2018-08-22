@@ -4,6 +4,7 @@ Using OMDB API handled by JQUERY And Designed using Bootstrap
 
 1) With the proper searched request the JQUERY handles the API well.
 	-> MakeData() is been called inside this,
-	   where the values of response objects are distributed through various classes.
+	   where the values of response objects are distributed through
+	   various classes to certain inner html.
 
 2) The checkMovie() select the search option i.e., by IMDB ID or By Title
