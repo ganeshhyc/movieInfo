@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    MoviePedia
+  </a>
+</nav>
+<div class="alert alert-warning" role="alert">
+  <span class="font-weight-bold">Note:</span> Date option singleton not available. Click on the blue button to change the options available.
+</div>
+<div class="container">
+  <div class="input-group input-group-lg ">
+  <div class="input-group">
+  <input type="text" class="getMovie form-control" placeholder="Search.." aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+  <div class="input-group-append" id="button-addon4">
+    <button class="btn btn-info search" type="button">Button</button>
+    <button class="btn checked btn-dark"  type="button">Search</button>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="result container-fluid">
+  <div class="jumbotron jumbotron-fluid row">
+  <div class="container col">
+    <h1 class="display-4 movie-name"></h1>
+    <p class="lead genre"></p>
+    <p class="rating"></p>
+    <p class="font-weight-light actors"></p>
+    <p class="font-weight-light plot"></p>
+  </div>
+  <div class="poster col">
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
